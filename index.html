@@ -11,7 +11,37 @@
 
 <body>
   <h1>Odin Library</h1>
-  <button>Add New Book</button>
+  <button class="js-add-book-btn">Add New Book</button>
+  <dialog>
+    <form method="dialog">
+      <p class="title">Add New Book</p>
+      <div>
+        <label for="author">Author <span>*</span></label>
+        <input type="text" name="author" id="author" required autofocus>
+      </div>
+      <div>
+        <label for="title">Title <span>*</span></label>
+        <input type="text" name="title" id="title" required>
+      </div>
+      <div>
+        <label for="pages">Pages <span>*</span></label>
+        <input type="text" name="pages" id="pages" required>
+      </div>
+      <fieldset>
+        <legend>Read <span>*</span></legend>
+        <div>
+          <label for="read">Yes</label>
+          <input type="radio" name="read" id="read" value="true">
+        </div>
+        <div>
+          <label for="read">No</label>
+          <input type="radio" name="read" id="read" value="false" checked>
+        </div>
+      </fieldset>
+      <button class="js-dialog-submit-book-btn" type="submit">Submit</button>
+      <button class="js-dialog-close-btn" type="button">Close</button>
+    </form>
+  </dialog>
 </body>
 
 </html>
